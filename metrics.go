@@ -7,7 +7,7 @@ import (
 )
 
 var (
-	loginFailedTotal     = stats.Int64("login_failed_total", "Total number of succeeded logins", "1")
+	loginFailedTotal     = stats.Int64("login_failed_total", "Total number of failed logins", "1")
 	loginFailedTotalView = &view.View{
 		Name:        "login_failed_total",
 		Measure:     loginFailedTotal,
